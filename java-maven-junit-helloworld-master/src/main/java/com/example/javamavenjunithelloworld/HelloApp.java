@@ -7,7 +7,6 @@ package com.example.javamavenjunithelloworld;
 public class HelloApp {
 
 	static int DEFAULT_TIMES = 3;
-
 	static int EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD = 2;
 	static int EXIT_STATUS_HELLO_FAILED = 4;
 
@@ -24,8 +23,8 @@ public class HelloApp {
 			try {
 				times = Integer.valueOf(args[0]);
 			} catch (NumberFormatException e) {
-				System.err.println("I don't understand the parameter you passed me. Is it a number? "
-						+ "Parameter was: [" + args[0] + "]");
+				System.err.println("I don't understand the parameter you passed me. "
+						+ "Is it a number? Parameter was: [" + args[0] + "]");
 				System.exit(EXIT_STATUS_PARAMETER_NOT_UNDERSTOOD);
 			}
 		}
